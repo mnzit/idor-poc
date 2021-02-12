@@ -1,9 +1,6 @@
 package com.mnzit.idor.poc.config;
 
-import com.mnzit.idor.poc.converter.HashToLongParamConverter;
-import com.mnzit.idor.poc.converter.HashToLongParamFormatter;
-import com.mnzit.idor.poc.converter.Unhash;
-import com.mnzit.idor.poc.converter.UnhashFormatterFactory;
+import com.mnzit.idor.poc.factory.UnhashFormatterFactory;
 import com.mnzit.idor.poc.hasher.service.IdHasher;
 import com.mnzit.idor.poc.hasher.service.impl.IdHashIdsImpl;
 import lombok.AllArgsConstructor;
@@ -12,9 +9,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
-import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
-
-import java.util.Properties;
 
 /**
  * @author Manjit Shakya

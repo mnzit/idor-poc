@@ -1,4 +1,4 @@
-package com.mnzit.idor.poc.converter;
+package com.mnzit.idor.poc.formater;
 
 import com.mnzit.idor.poc.hasher.service.IdHasher;
 import lombok.AllArgsConstructor;
@@ -15,11 +15,12 @@ public class HashToLongParamFormatter implements Formatter<Long> {
 
     private final IdHasher idHasher;
 
-
     @Override
     public Long parse(String hash, Locale locale) throws ParseException {
         log.debug("hash : {}", hash);
-
+        /**
+         * Incase of number is passed instead of hash -1 is returned with is then catched by the Constraint Validator
+         */
         if (StringUtils.isNumeric(hash)) {
             return -1L;
 

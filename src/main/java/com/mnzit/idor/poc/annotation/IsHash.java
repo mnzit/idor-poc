@@ -1,4 +1,4 @@
-package com.mnzit.idor.poc.converter;
+package com.mnzit.idor.poc.annotation;
 
 import com.mnzit.idor.poc.validator.IsHashValidator;
 

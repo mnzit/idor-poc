@@ -1,6 +1,6 @@
 package com.mnzit.idor.poc.validator;
 
-import com.mnzit.idor.poc.converter.IsHash;
+import com.mnzit.idor.poc.annotation.IsHash;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.validation.ConstraintValidator;

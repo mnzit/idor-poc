@@ -12,7 +12,7 @@ public class HashToLongParamConverter implements Converter<String, Long> {
 
     @Override
     public Long convert(String token) {
-
+        // TODO: This exception is not handled by ControllerAdvice (Yet to check out how to handle this issue)
         if(StringUtils.isNumeric(token)){
             throw new RuntimeException("Exception occured");
         }

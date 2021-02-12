@@ -2,7 +2,7 @@
 2021.02.11 13:49:45.747 [DEBUG] com.mnzit.idor.poc.IdorPocApplication: Running with Spring Boot v2.4.2, Spring v5.3.3
 2021.02.11 13:49:45.749 [INFO] com.mnzit.idor.poc.IdorPocApplication: No active profile set, falling back to default profiles: default
 2021.02.11 13:49:46.984 [INFO] com.mnzit.idor.poc.IdorPocApplication: Started IdorPocApplication in 1.518 seconds (JVM running for 2.547)
-2021.02.11 13:49:53.552 [DEBUG] com.mnzit.idor.poc.converter.HashToLongParamFormatter: hash : AEk2y7w6a0KzoA4r3WqpdMxRY
+2021.02.11 13:49:53.552 [DEBUG] com.mnzit.idor.poc.formater.HashToLongParamFormatter: hash : AEk2y7w6a0KzoA4r3WqpdMxRY
 2021.02.11 13:49:53.624 [DEBUG] com.mnzit.idor.poc.validator.IsHashValidator: id : 1
 2021.02.11 13:49:53.633 [DEBUG] com.mnzit.idor.poc.repository.impl.StudentRepositoryMemoryImpl: Fetching student with id : 1
 2021.02.11 13:49:53.640 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]: Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'com.mnzit.idor.poc.converter.IsHash' validating type 'com.mnzit.idor.poc.model.Student'. Check configuration for 'getStudent.<return value>'] with root cause

@@ -2,8 +2,8 @@
 2021.02.11 13:46:36.214 [DEBUG] com.mnzit.idor.poc.IdorPocApplication: Running with Spring Boot v2.4.2, Spring v5.3.3
 2021.02.11 13:46:36.215 [INFO] com.mnzit.idor.poc.IdorPocApplication: No active profile set, falling back to default profiles: default
 2021.02.11 13:46:37.540 [INFO] com.mnzit.idor.poc.IdorPocApplication: Started IdorPocApplication in 1.69 seconds (JVM running for 3.045)
-2021.02.11 13:46:45.482 [DEBUG] com.mnzit.idor.poc.converter.HashToLongParamFormatter: hash : 1
-2021.02.11 13:46:45.482 [DEBUG] com.mnzit.idor.poc.converter.HashToLongParamFormatter: hash : 1
+2021.02.11 13:46:45.482 [DEBUG] com.mnzit.idor.poc.formater.HashToLongParamFormatter: hash : 1
+2021.02.11 13:46:45.482 [DEBUG] com.mnzit.idor.poc.formater.HashToLongParamFormatter: hash : 1
 2021.02.11 13:46:49.809 [DEBUG] com.mnzit.idor.poc.validator.IsHashValidator: id : 1
 2021.02.11 13:46:50.791 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]: Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.ConstraintViolationException: getStudent.id: Field value should be from list of ] with root cause
 javax.validation.ConstraintViolationException: getStudent.id: Field value should be from list of 

@@ -1,7 +1,7 @@
 package com.mnzit.idor.poc.controller;
 
-import com.mnzit.idor.poc.converter.IsHash;
-import com.mnzit.idor.poc.converter.Unhash;
+import com.mnzit.idor.poc.annotation.IsHash;
+import com.mnzit.idor.poc.annotation.Unhash;
 import com.mnzit.idor.poc.model.Student;
 import com.mnzit.idor.poc.repository.StudentRepository;
 import lombok.AllArgsConstructor;
