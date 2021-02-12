@@ -87,6 +87,27 @@ public @interface IsHash {
 }
 ```
 
+
+_IsHashValidator.java_
+```java
+@Slf4j
+public class IsHashValidator implements ConstraintValidator<IsHash, Long> {
+
+    @Override
+    public void initialize(IsHash constraintAnnotation) {
+    }
+
+    @Override
+    public boolean isValid(Long id, ConstraintValidatorContext context) {
+        log.debug("id : {}",id);
+        if(id > 0){
+            return true;
+        }
+        return false;
+    }
+}
+```
+
 _HashToLongParamFormatter.java_
 ```java
 @Slf4j
