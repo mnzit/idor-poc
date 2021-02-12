@@ -147,7 +147,7 @@ public class UnhashFormatterFactory implements AnnotationFormatterFactory<Unhash
 
 > Jackson converters comes in handly to convert Long id to hash
 
-_LongIdToHashConverter.java_
+_LongIdToHashConverter.java_ and _HashToLongIdConverter.java_
 ```java
 @Component
 @AllArgsConstructor
