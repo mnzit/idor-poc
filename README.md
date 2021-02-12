@@ -196,3 +196,26 @@ public class HashToLongIdConverter extends StdConverter<String, Long> {
     }
 }
 ```
+
+_Student.java_
+```java
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+public class Student implements Serializable {
+
+    @JsonSerialize(converter = LongIdToHashConverter.class)
+    private Long id;
+    private String name;
+
+}
+
+```
+> Jackson converter example
+```
+   @JsonSerialize(converter = LongIdToHashConverter.class)
+   @JsonDerialize(converter = HashToLongIdConverter.class)
+```
+
+
